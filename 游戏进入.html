@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>游戏进入</title>
+	<style>
+	.q{
+			width:500px;
+			height:500px;
+			margin:0 auto;
+			position:absolute;
+			left:200px;
+		z-index:-1;
+		}
+	</style>
+</head>
+
+<body>
+ <div class="q"><img src="房间.gif" style="width:700px;height:500px" alt="房间"></div>
+<img src="像素皮卡丘.png" style="width:180px;position:absolute;left:320px;top:120px;">
+<img src="人物角色1.png" style="width:190px;position:absolute;left:410px;top:160px;">
+<img src="对话1.png" style="width:600px;height:250px;position:absolute;left:260px;top:260px;" id="wu" onClick="yes()">
+<img src="对话框2.png" style="width:600px;height:250px;position:absolute;left:260px;top:260px;display:none;" id="heh" onClick="no()">
+<img src="对话3.png" style="width:600px;height:250px;position:absolute;left:260px;top:260px;display:none" id="heo" onClick="noo()">
+<img src="对话4.png" style="width:600px;height:250px;position:absolute;left:260px;top:260px;display:none" id="heq" onClick="nq()">
+<img src="对话5.png" style="width:600px;height:250px;position:absolute;left:260px;top:260px;display:none" id="hew" onclick="nw()">
+<img src="对话7.png" style="width:600px;height:250px;position:absolute;left:260px;top:260px;display:none" id="her" onclick="nr()">
+<a href="关卡一.html"><img src="对话8.png" style="width:600px;height:250px;position:absolute;left:260px;top:260px;display:none" id="het"></a>
+<script>
+function yes(){
+	var x=document.getElementById("heh");
+	x.style.display="block";
+	var y=document.getElementById("wu");
+	y.style.display="none";
+}	
+function no(){
+	var x=document.getElementById("heo");
+	x.style.display="block";
+	var y=document.getElementById("heh");
+	y.style.display="none";
+}	
+function noo(){
+	var x=document.getElementById("heq");
+	x.style.display="block";
+	var y=document.getElementById("heo");
+	y.style.display="none";
+}	
+function nq(){
+	var x=document.getElementById("hew");
+	x.style.display="block";
+	var y=document.getElementById("heq");
+	y.style.display="none";
+}	
+function nw(){
+	var x=document.getElementById("her");
+	x.style.display="block";
+	var y=document.getElementById("hew");
+	y.style.display="none";
+}	
+	function nr(){
+	var x=document.getElementById("het");
+	x.style.display="block";
+	var y=document.getElementById("her");
+	y.style.display="none";
+}
+</script>
+</body>
+</html>
