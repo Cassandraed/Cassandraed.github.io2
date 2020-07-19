@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关卡二</title>
+	<style>
+		body{
+			overflow:hidden;
+		}
+	.q{
+		width:500px;
+		height:500px;
+		margin:0 auto;
+		position:absolute;
+		left:200px;
+		z-index:-1;
+	border:1px solid black;
+		background-color:#8dc8f4;
+		}
+		.duyao1{
+			position:fixed;
+     top:0;
+    left:0;
+    right:0;
+    width:20px;
+    height:20px;
+    margin:0px auto;
+		}
+		.jinglingqiu1{
+	position:fixed;
+    top:0;
+    left:700px;
+    width:20px;
+    height:20px;
+		}
+		.duyao2{
+	position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;
+		}
+		.duyao3{
+		position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;	
+		}
+		.jinglingqiu2{
+		position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;	
+		}
+		.duyao4{
+	position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;
+		}
+		.duyao5{
+	position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;
+		}
+		.duyao6{
+	position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;
+		}
+			.duyao7{
+	position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;
+		}
+			.duyao8{
+	position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;
+		}
+		.jinglingqiu3{
+	position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;
+		}
+		.jinglingqiumax{
+	position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;
+		}
+		.jinglingqiumax2{
+	position:fixed;
+    top:0;
+    left:200px;
+    width:20px;
+    height:20px;
+		}
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+</head>
+
+<body>
+	<div class="q" style="overflow:hidden;width:700px;">
+<img src="楼梯.png" style="width:700px;position:absolute;top:350px;height:150px;" alt="yo">
+<img src="云朵.png" style="width:200px;position:absolute;height:150px;z-index:-1;">
+		<img src="云朵.png" style="width:200px;position:absolute;height:150px;left:180px;z-index:-1;">
+<img src="云朵.png" style="width:200px;position:absolute;height:150px;left:360px;z-index:-1;">
+	<img src="云朵.png" style="width:200px;position:absolute;height:150px;left:540px;z-index:-1;">
+		<a id="xixi"><img src="卡通童话门.png" style="width:100px;position:absolute;top:348px;" onClick="dianji()"></a>
+		<img src="杰尼龟.png" style="width:70px;position:absolute;top:360px;left:20px;display:none;" id="qqw">
+	<img src="像素皮卡丘1.png" style="width:80px;position:absolute;left:350px;top:363px;" id="wa">
+	<img src="随机产生掉落物.png" style="width:100px;" id="butto">
+	<div class="duyao1" style="display:none;"><img src="毒药.png" style="width:30px;height:60px;"></div>
+	<div class="jinglingqiu1" style="display:none;"><img src="精灵球.png" style="width:35px;"></div>
+	<div class="duyao2" style="position:absolute;display:none;"><img src="毒药.png" style="width:30px;height:60px;"></div>
+		<div class="duyao3" style="position:absolute;left:30px;display:none;"><img src="毒药.png" style="width:30px;height:60px;"></div>
+		<div class="duyao4" style="position:absolute;left:600px;display:none;"><img src="毒药.png" style="width:30px;height:60px;"></div>
+		<div class="duyao5" style="position:absolute;left:250px;display:none;"><img src="毒药.png" style="width:30px;height:60px;"></div>
+		<div class="duyao6" style="position:absolute;left:500px;display:none;"><img src="毒药.png" style="width:30px;height:60px;"></div>
+		<div class="duyao7" style="position:absolute;left:300px;display:none;"><img src="毒药.png" style="width:30px;height:60px;"></div>
+		<div class="duyao8" style="position:absolute;left:600px;display:none"><img src="毒药.png" style="width:30px;height:60px;"></div>
+	<div class="jinglingqiu2" style="left:400px;display:none;"><img src="精灵球.png" style="width:35px;"></div>
+		<div class="jinglingqiu3" style="left:600px;display:none;"><img src="精灵球.png" style="width:35px;"></div>
+		<div class="jinglingqiumax" style="left:560px;display:none;"><img src="56.png" style="width:45px;"></div>
+		<div class="jinglingqiumax2" style="left:780px;z-index:1;display:none;"><img src="56.png" style="width:45px;"></div>
+		<div id="qq" style="left:300px;top:0;position:fixed;display:none;"><img src="精灵球.png" style="width:35px;"></div>
+	<div style="position:absolute;left:300px;top:10px;">获得分数：</div>
+		<div style="position:absolute;left:380px;top:10px;" id="ye">0</div>
+	</div>
+	<a href="index.html"><img src="回到首页.png" style="width:35px;left:750px;position:absolute;top:20px;"></a>
+	<a href="关卡三"><img src="返回上一页.png" style="width:35px;left:800px;position:absolute;top:20px;"></a>
+	<img src="问题.png" style="width:35px;left:850px;position:absolute;top:20px;">
+	<div><img src="win.png" style="position:absolute;width:300px;left:400px;top:80px;display:none;" id="z"></div>
+<script>
+	var x=document.getElementById("wa");
+var step=30;
+	document.addEventListener("keydown",keydown);
+	function keydown(event){
+		switch(event.keyCode){
+			case 37:
+				x.style.left=x.offsetLeft-step+"px";
+				break;
+			case 39:
+				x.style.left=x.offsetLeft+step+"px";
+				break;
+		}
+	}
+	$("#butto").click(function(){
+		$(".duyao1").css("display","block");
+		$(".duyao1").animate({top:'315px'},1000,"swing",function(){
+			stop2($(this),1000);
+		});
+		setTimeout(function()
+				   {
+			$(".jinglingqiu1").css("display","block");
+		$(".jinglingqiu1").animate({top:'315px'},2000,"linear",function(){
+			stop1($(this),2000);
+		});
+		},2600);
+		setTimeout(
+		function(){
+			$(".duyao2").css("display","block");
+		$(".duyao2").animate({top:'315px'},1000,"linear",function(){
+			stop2($(this),1000);
+		});
+		},5000);
+		setTimeout(
+		function(){
+			$(".duyao3").css("display","block");
+		$(".duyao3").animate({top:'315px'},1500,"linear",function(){
+			stop2($(this),1500);
+		});
+		},12000);
+	setTimeout(
+		function(){
+			$(".jinglingqiu2").css("display","block");
+		$(".jinglingqiu2").animate({top:'315px'},2000,"linear",function(){
+			stop1($(this),2000);
+		});
+		},8000);
+		setTimeout(
+		function(){
+			$(".jinglingqiu3").css("display","block");
+		$(".jinglingqiu3").animate({top:'315px'},2000,"linear",function(){
+			stop1($(this),2000);
+		});
+		},15000);
+		setTimeout(
+		function(){
+			$(".jinglingqiumax").css("display","block");
+		$(".jinglingqiumax").animate({top:'315px'},1700,"linear",function(){
+			stop3($(this),1700);
+		});
+		},7000);
+		setTimeout(
+		function(){
+			$(".duyao7").css("display","block");
+		$(".duyao7").animate({top:'315px'},1400,"linear",function(){
+			stop2($(this),1400);
+		});
+		},9000);
+		setTimeout(
+		function(){
+			$(".jinglingqiumax2").css("display","block");
+		$(".jinglingqiumax2").animate({top:'315px'},1700,"linear",function(){
+			stop3($(this),1700);
+		});
+		},13000);
+		setTimeout(
+		function(){
+			$("#qq").css("display","block");
+		$("#qq").animate({top:'315px'},2000,"linear",function(){
+			stop1($(this),2000);
+		});
+		},18000);
+		setTimeout(
+		function(){
+			$(".duyao8").css("display","block");
+		$(".duyao8").animate({top:'315px'},2000,"linear",function(){
+			stop1($(this),2000);
+		});
+		},15000);
+	});
+	function stop2(obj,speed){
+   //获取横坐标
+	var x=$("#wa");
+   var left = obj.offset().left;
+var left1=x.offset().left;
+		var top1 = x.offset().top;
+		var top = obj.offset().top;
+		var fenshu=document.getElementById("ye").innerHTML;
+		console.log(fenshu)
+		console.log(left);
+		console.log(left1);
+		console.log(left-left1);
+		console.log(top1);
+		console.log(top);
+   if((left-left1)>-35&&(left-left1)<60){
+        obj.hide();
+	   parseInt("fenshu");
+	   fenshu--;
+	   document.getElementById("ye").innerHTML=fenshu;
+    }else{
+        //继续掉落
+        obj.animate({top:'370px'},2000,"linear",function(){$(this).hide();});
+    }
+}
+	function stop1(obj,speed){
+   //获取横坐标
+	var x=$("#wa");
+   var left = obj.offset().left;
+var left1=x.offset().left;
+		var top1 = x.offset().top;
+		var top = obj.offset().top;
+		var fenshu=document.getElementById("ye").innerHTML;
+   if((left-left1)>-35&&(left-left1)<60){
+        obj.hide();
+	   parseInt("fenshu");
+	   fenshu++;
+	   document.getElementById("ye").innerHTML=fenshu;
+    }else{
+        //继续掉落
+        obj.animate({top:'400px'},3000,"linear",function(){$(this).hide();});
+    }
+}
+		function stop3(obj,speed){
+   //获取横坐标
+	var x=$("#wa");
+   var left = obj.offset().left;
+var left1=x.offset().left;
+		var top1 = x.offset().top;
+		var top = obj.offset().top;
+		var fenshu=document.getElementById("ye").innerHTML;
+   if((left-left1)>-35&&(left-left1)<60){
+        obj.hide();
+	   parseInt("fenshu");
+	   fenshu++;
+	   fenshu++;
+	   fenshu++;
+	   document.getElementById("ye").innerHTML=fenshu;
+    }else{
+        //继续掉落
+        obj.animate({top:'400px'},2000,"linear",function(){$(this).hide();});
+    }
+}
+	function dianji(){
+		var y=document.getElementById("xixi");
+		if(document.getElementById("ye").innerHTML==5||document.getElementById("ye").innerHTML>5)
+		{
+		y.href="结尾.html";
+		}
+	}
+</script>
+</body>
+</html>
