@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		.q{
+			width:500px;
+			height:500px;
+			margin:0 auto;
+			position:absolute;
+			left:200px;
+		}
+		.w{
+			position:absolute;
+			weight:300px;
+			display:none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="q"><img src="主页面.png" alt="主页面"  style="width:700px;"></div>
+    <a href="游戏进入.html"><img src="5.png" style="width:168px;position:absolute;left:308px;top:265px;" alt="游戏开始"></a>
+	<img src="游戏规则.png" style="width:168px;position:absolute;left:308px;top:340px;" alt="游戏规则" onClick="qw()">
+	<div class="w" id="pik"><img src="游戏规则详解.png" style="width:470px;position:absolute;left:320px;top:10px;" alt="hehe" ><img src="返回.png" style="width:100px;left:660px;position:absolute;top:315px;" onClick="rr()"></div>
+	<script>
+     function qw(){
+		 var x=document.getElementById("pik");
+		 x.style.display="block";
+	 }
+		function rr(){
+			var x=document.getElementById("pik");
+		 x.style.display="none";
+		}
+	</script>
+</body>
+</html>
