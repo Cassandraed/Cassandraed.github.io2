@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>二三过渡</title>
+<style>
+	.q{
+		width:700px;
+		height:500px;
+		margin:0 auto;
+		position:absolute;
+		left:200px;
+		z-index:-1;
+	border:1px solid black;
+		background-color:#8dc8f4;
+		}
+</style>
+</head>
+
+<body>
+<div class="q" style="overflow:hidden;">
+<img src="楼梯.png" style="width:700px;position:absolute;top:350px;height:150px;" alt="yo">
+<img src="云朵.png" style="width:200px;position:absolute;height:150px;z-index:-1;">
+		<img src="云朵.png" style="width:200px;position:absolute;height:150px;left:180px;z-index:-1;">
+<img src="云朵.png" style="width:200px;position:absolute;height:150px;left:360px;z-index:-1;">
+	<img src="云朵.png" style="width:200px;position:absolute;height:150px;left:540px;z-index:-1;">
+		<img src="卡通童话门.png" style="width:100px;position:absolute;top:348px;">
+	<img src="像素皮卡丘1.png" style="width:80px;position:absolute;left:350px;top:363px;" id="wa">
+	<img src="坏人.png" style="width:70px;position:absolute;left:460px;top:316px;">
+	<img src="二三对话框1.png" style="width:600px;height:250px;position:absolute;left:40px;top:250px;" id="wu" onClick="yes()">
+	<img src="二三对话框2.png" style="width:600px;height:250px;position:absolute;left:40px;top:250px;display:none;" id="heh" onClick="no()">
+<img src="二三对话框3.png" style="width:600px;height:250px;position:absolute;left:40px;top:250px;display:none" id="heo" onClick="noo()">
+<img src="二三对话框5.png" style="width:600px;height:250px;position:absolute;left:40px;top:250px;display:none" id="heq" onClick="nq()">
+<a href="关卡三.html"><img src="二三对话框4.png" style="width:600px;height:250px;position:absolute;left:40px;top:250px;display:none" id="hew" onclick="nw()"></a>
+</div>
+	<script>
+	function yes(){
+	var x=document.getElementById("heh");
+	x.style.display="block";
+	var y=document.getElementById("wu");
+	y.style.display="none";
+}	
+function no(){
+	var x=document.getElementById("heo");
+	x.style.display="block";
+	var y=document.getElementById("heh");
+	y.style.display="none";
+}	
+function noo(){
+	var x=document.getElementById("heq");
+	x.style.display="block";
+	var y=document.getElementById("heo");
+	y.style.display="none";
+}	
+function nq(){
+	var x=document.getElementById("hew");
+	x.style.display="block";
+	var y=document.getElementById("heq");
+	y.style.display="none";
+}	
+	</script>
+</body>
+</html>
