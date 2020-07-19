@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关卡一</title>
+<style>
+.q{
+		width:500px;
+		height:500px;
+		margin:0 auto;
+		position:absolute;
+		left:200px;
+		z-index:-1;
+	border:1px solid black;
+		}
+.box{
+   overflow: hidden; 
+   margin: 15vh auto 0; 
+   height: 500px;
+   width:  500px;
+}
+.box div{
+    float: left;
+    width: 40px;
+    height:40px;
+}
+
+.daoda{
+    opacity:0.5;
+	background:url("五角星.png") #5cdbce;
+	background-size: cover;
+}
+	.dimian{
+    background-color: #3e8380;
+}
+.qiang{
+    background-image:url("砖块.jpg"); 
+}
+.xiangzi{
+    box-sizing: border-box;
+    border:1px solid  rgba(7,17,27,0.5);
+    background-color:#dca668;
+}
+.pu {
+    width: 40px;
+    height: 40px;
+    background: url("像素皮卡丘1.png") #3e8380;
+    background-size: cover;
+   }
+	.oh{
+		position:absolute;
+		width:200px;
+		height:200px;
+	}
+	.z{
+		width: 40px;
+    height: 40px;
+	}
+	.x{
+		width: 40px;
+    height: 40px;
+	}
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+	</script>
+</head>
+
+<body>
+<div class="q" style="background-color:#316c7c;width:700px;">
+<div class="box">
+<div></div>
+    <div></div>
+     <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div></div>
+        <div ></div>
+        <div ></div>
+        <div></div>
+        <div></div> 
+
+        <!-- 第二行 -->
+        <div></div>
+        <div></div>
+        <div class="qiang"></div>
+        <div  class="dimian pu"></div>
+        <div  class="dimian"></div>
+        <div  class="dimian"></div>
+        <div class="qiang"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div> 
+        <!-- 第三行 -->
+        <div ></div>
+        <div></div>
+        <div class="qiang"></div>
+        <div  class="dimian"></div>
+        <div class="xiangzi"></div>
+        <div class="xiangzi"></div>
+        <div class="qiang"></div>
+        <div></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div></div> 
+        <!-- 第4行 -->
+        <div></div>
+        <div></div>
+        <div class="qiang"></div>
+        <div  class="dimian"></div>
+        <div class="xiangzi"></div>
+        <div  class="dimian"></div>
+        <div class="qiang"></div>
+        <div></div>
+        <div class="qiang"></div>
+        <div class="daoda z" onClick="panduan()"></div>
+        <div class="qiang"></div>
+        <div></div> 
+        <!-- 第5行 -->
+        <div></div>
+        <div></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div  class="dimian"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="daoda x" onClick="panduan2()"></div>
+        <div class="qiang"></div>
+        <div></div> 
+        <!-- 第6行 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div  class="dimian"></div>
+        <div  class="dimian"></div>
+        <div  class="dimian"></div>
+        <div  class="dimian"></div>
+        <div class="daoda"></div>
+        <div class="qiang"></div>
+        <div></div> 
+        <!-- 第7行 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="qiang"></div>
+        <div  class="dimian "></div>
+        <div  class="dimian"></div>
+        <div  class="dimian"></div>
+        <div  class="qiang"></div>
+        <div class="dimian"></div>
+        <div class="dimian"></div>
+        <div class="qiang"></div>
+        <div></div> 
+        
+        <!-- 第8行 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="qiang"></div>
+        <div  class="dimian"></div>
+        <div  class="dimian" onClick="yes()" id="hh"></div>
+        <div  class="dimian"></div>
+        <div  class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div></div>         
+        <!-- 第9行 -->
+        <div></div>
+        <div></div>
+        <div ></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div class="qiang"></div>
+        <div></div>
+        <div></div>
+        <div></div>         
+       <div class="oh"><img src="谜语一.png" style="width:310px;position:absolute;left:115px;top:-20px;display:none;" alt="ww" id="ye"></div>    <div class="oh"><img src="谜语二.png" style="width:310px;position:absolute;left:115px;top:-20px;display:none;" alt="ee" id="ah"></div>
+	</div><a href="二三过渡.html"><img src="下一关.png" style="position:absolute;width:110px;top:410px;left:500px;display:none;" id="eiyo"></a>
+	<a href="index.html"><img src="回到首页.png" style="width:35px;left:530px;position:absolute;top:10px;"></a>
+	<a href="关卡二.html"><img src="返回上一页.png" style="width:35px;left:580px;position:absolute;top:10px;"></a>
+	<img src="问题.png" style="width:35px;left:630px;position:absolute;top:10px;"></div>
+<script>
+	var box=$('.box div');
+	var num=12;
+var posi=15;
+	document.addEventListener("keydown",keydown);
+function keydown(event){
+ switch(event.keyCode){
+		 case 38:
+		 mov(-num);
+		 break;
+	 case 40:
+		 mov(num);
+		 break;
+	 case 37:
+		 mov(-1);
+		 break;
+	 case 39:
+		 mov(1);
+		 break;
+ }
+		setTimeout(win,500);
+	}
+	 function mov(step){ 
+        var pikapika1=box.eq(posi);
+        var pikapika2=box.eq(posi+step);
+        var pushBox=box.eq(posi+step*2);
+        if(!pikapika2.hasClass('xiangzi')&&( pikapika2.hasClass('daoda')||pikapika2.hasClass('dimian'))){
+            pikapika1.removeClass("pu"); 
+            pikapika2.addClass("pu");
+            posi=posi+step;
+        }
+        else if((pikapika2.hasClass('xiangzi'))&&(!pushBox.hasClass('xiangzi'))&&(pushBox.hasClass('daoda')|| pushBox.hasClass('dimian')) ) {
+           pikapika2.removeClass('xiangzi');
+            pikapika1.removeClass("pu");
+            pushBox.addClass('xiangzi');
+			console.log("eee:"+$(".daoda .xiangzi").length);
+            pikapika2.addClass("pu").addClass("dimian");
+            posi=posi+step;
+        }
+    } 
+	function panduan(){
+		if($(".daoda.xiangzi").length===1&&$(".xiangzi.z").length===1){
+		$("#ye").css("display","block");
+		$("#ye").click(function(){
+		$("#ye").css("display","none");
+	});
+	}
+	}
+	function panduan2(){
+	if($(".daoda.xiangzi").length===2&&$(".xiangzi.z").length===1&&$(".xiangzi.x").length===1){
+		$("#ah").toggle();
+		$("#ah").click(function(){
+		$("#ah").css("display","none");
+	});
+	}
+	}
+function win(){
+    if($(".daoda.xiangzi").length===3){
+       alert("请猜出谜底并用鼠标点击找出隐藏的妙蛙种子");
+}
+}
+function yes(){
+	$("#hh").css({"background-image":"url('妙蛙种子.png')","background-size":"cover"});
+	$("#eiyo").css("display","block");
+}	
+</script>
+</body>
+</html>
